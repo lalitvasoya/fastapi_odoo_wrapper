@@ -23,5 +23,8 @@ def initialize_odoo() -> None:
     odoo.tools.config.parse_config([])
 
 
+
+
+
 # register main router
 app.include_router(src_router)

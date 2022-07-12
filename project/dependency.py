@@ -5,10 +5,10 @@ from odoo.api import Environment
 def odoo_env() -> Environment:
 
     config = odoo.tools.config
-    config["db_name"] = 'odoo_training'
+    config["db_name"] = 'odoo_test_demo'
     config["db_host"] = 'localhost'
     config["db_port"] = 5432
-    config["db_user"] = 'er'
+    config["db_user"] = 'postgres'
     config["db_password"] = 'postgres'
 
     registry = odoo.registry(config["db_name"]).check_signaling()
